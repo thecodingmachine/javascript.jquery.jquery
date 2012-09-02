@@ -1,6 +1,5 @@
 <?php
-// First, let's request the install utilities
-require_once '../../../../../mouf/actions/InstallUtils.php';
+use Mouf\InstallUtils;
 
 // Let's init Mouf
 InstallUtils::init(InstallUtils::$INIT_APP);
