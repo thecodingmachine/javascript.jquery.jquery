@@ -1,5 +1,8 @@
 <?php
-use Mouf\InstallUtils;
+require_once __DIR__."/../../autoload.php";
+
+use Mouf\Actions\InstallUtils;
+use Mouf\MoufManager;
 
 // Let's init Mouf
 InstallUtils::init(InstallUtils::$INIT_APP);
@@ -10,7 +13,7 @@ $moufManager = MoufManager::getMoufManager();
 if ($moufManager->instanceExists("jQueryLibrary")) {
 	$jQueryLib = $moufManager->getInstanceDescriptor("jQueryLibrary");
 } else {
-	$jQueryLib = $moufManager->createInstance("WebLibrary");
+	$jQueryLib = $moufManager->createInstance("\Mouf\Html\Utils\WebLibraryManager\WebLibrary");
 	$jQueryLib->setName("jQueryLibrary");
 }
 $jQueryLib->getProperty("jsFiles")->setValue(array(
