@@ -3,7 +3,7 @@
     "description": "This package contains the JQuery library, along a Mouf installer file to add JQuery easily in your Mouf project.",
     "keywords": ["javascript", "mouf", "jquery"],
     "homepage": "https://github.com/thecodingmachine/javascript.jquery.jquery",
-    "type": "library",
+    "type": "mouf-library",
     "license": "MIT",
     "authors": [
         {
