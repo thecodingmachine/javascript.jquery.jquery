@@ -13,7 +13,7 @@ InstallUtils::init(InstallUtils::$INIT_APP);
 $moufManager = MoufManager::getMoufManager();
 
 WebLibraryInstaller::installLibrary("jQueryLibrary",
-	array('vendor/mouf/javascript.jquery.jquery/jquery-1.11.0.min.js'),
+	array('vendor/mouf/javascript.jquery.jquery/jquery-2.1.4.min.js'),
 	array(),
 	array(),
 	true
