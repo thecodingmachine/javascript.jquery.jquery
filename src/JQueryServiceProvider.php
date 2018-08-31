@@ -11,7 +11,7 @@ use TheCodingMachine\Funky\ServiceProvider;
 class JQueryServiceProvider extends ServiceProvider
 {
     /**
-     * @Factory(name="jQueryWebLibrary", tags={@Tag(name="webLibraries", priority=0.0)})
+     * @Factory(name="jQueryWebLibrary", tags={@Tag(name="webLibraries", priority=1000.0)})
      */
     public static function createRootUrlWebLibrary(): WebLibrary
     {
