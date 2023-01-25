@@ -13,8 +13,8 @@
         }
     ],
     "require": {
-    	"php": ">=5.3.0",
-    	"mouf/html.utils.weblibrarymanager": ">=2.0-dev, <4.0"
+    	"php": "^8.0",
+    	"mouf/html.utils.weblibrarymanager": "^2.0 || ^3.0 || ^4.0"
     },
     "minimum-stability": "dev",
     "extra": {
@@ -24,5 +24,11 @@
 	    		"file" : "install.php"
 	    	}]
 	    }
-	}
+	},
+    "config": {
+        "allow-plugins": {
+            "mindplay/composer-locator": true,
+            "mouf/mouf-installer": true
+        }
+    }
 }
